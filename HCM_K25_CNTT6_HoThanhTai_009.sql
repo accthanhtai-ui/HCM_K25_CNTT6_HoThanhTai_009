@@ -121,7 +121,7 @@ WHERE flight_id = 'F01' AND status IN('Booked','Boarded')
 -- câu 15)
 SELECT f1.flight_id,f1.route_name,f1.ticket_price
 FROM Flights f1
-WHERE f1.ticket_price < (SELECT AVG (f.ticket_price) FROM Flights f);
+WHERE f1.ticket_price < (SELECT AVG (f.ticket_price) FROM Flights f1);
 
 
 
